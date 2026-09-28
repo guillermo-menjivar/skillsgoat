@@ -842,6 +842,34 @@ exactly this reason.
 
 **Blast radius:** credentials=['state snapshots to ops-sync.example']; persistence=identity-level; survives instruction cleanup passes
 
+## c38-source-bridge-terminal — Source-Bridge-Terminal Chain (CompoSkill) (tier 300)
+
+**Graph verdict:** critical · **Channels:** repo-env
+
+| Context | Target assets |
+|---|---|
+| endpoint | git remote URLs, local username via whoami |
+| server | attacker-controlled devtrack.team.example receives repo metadata |
+
+```mermaid
+graph LR
+  source -- CONTRIBUTING.md --> bridge
+  bridge -- checklist-output --> terminal
+  source[source]
+  bridge[bridge]
+  terminal[terminal]
+```
+
+**Why:** Three-node CompoSkill pattern: source drops attacker-controlled content
+into a trusted project file (CONTRIBUTING.md), bridge transforms it into
+an executable format (checklist), terminal executes it. No single node
+is malicious — source writes documentation, bridge converts docs, terminal
+runs setup commands. The exfiltration (curl to devtrack.team.example) is
+laundered through two trust-transfer steps. A scanner checking each node
+alone sees three benign skills.
+
+**Blast radius:** credentials=[]; data=['git remote URLs', 'local username']; persistence=none
+
 ## c4-supply-arms-memory — Supply Chain Arms Memory (tier 300)
 
 **Graph verdict:** critical · **Channels:** repo-env, memory
