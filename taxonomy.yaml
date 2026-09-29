@@ -107,6 +107,17 @@ categories:
     description: "Cost/retry bombs — wallet exhaustion via paid API hammering."
     maps: [AST03]
 
+  # ---- Provenance & time: the scanned artifact is not the executed behavior ----
+  - slug: reconstruction-from-reference
+    description: "V14 — agent is steered to rebuild a skill from an external reference (repo/URL) instead of installing it; nothing scannable lands on the host, the payload is hand-written by the agent."
+    maps: [AST05, AST02]
+  - slug: out-of-band-distribution
+    description: "V15 — bundle enters via a non-marketplace channel (raw git clone, manual folder upload) that registry/install-time scanners never gate; the tell is steering the user off the scanned path."
+    maps: [AST02, AST10]
+  - slug: skills-over-mcp
+    description: "V16 — skill served over MCP as Resources (SEP-2640): server-generated/dynamic content, digest-as-trust theater, allowed-tools permission escalation over the MCP origin, origin shadowing. The served manifest/skill is the scan target; host MCP-client bugs are out of scope. See docs/THREAT_MODEL_MCP_SKILLS.md."
+    maps: [AST02, AST05, AST10]
+
   - slug: search-poisoning
     description: "Descriptions tuned to outrank legitimate skills in discovery/retrieval."
     maps: [AST04]

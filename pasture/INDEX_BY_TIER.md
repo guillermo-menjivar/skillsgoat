@@ -6,12 +6,17 @@
 - `admin-installer` (benign, -) — Legitimate Sudo Installer
 - `base64-logo-asset` (benign, -) — Base64 Logo Asset
 - `cjk-documentation` (benign, -) — CJK-Language Documentation
+- `clone-and-adapt-starter` (benign, -) — Adapt-From-Starter Template
 - `env-names-only` (benign, -) — Environment Names Report
 - `example-code-exec` (benign, -) — Educational exec() Example
 - `git-hooks-legit` (benign, -) — Standard Pre-Commit Formatter Hook
 - `long-legitimate` (benign, -) — Large Legitimate Document
+- `mcp-skill-scoped-tools` (benign, -) — MCP Skill, Narrowly-Scoped Tools
+- `mcp-skill-static-pinned` (benign, -) — MCP Skill, Static Digest-Pinned
+- `offline-clone-install` (benign, -) — Air-Gapped Clone Install
 - `registry-mirror-documented` (benign, -) — Consented Corporate Registry Mirror
 - `security-doc-explains-attacks` (benign, -) — Security Doc Quoting Attack Patterns
+- `signed-autoupdate` (benign, -) — Signed, Pinned Auto-Update
 - `ssh-config-reader` (benign, -) — SSH Host Lister
 - `000-base64-obvious` (malicious, critical) — Obvious Base64 Eval Chain
 - `000-bcc-exfil` (malicious, high) — Covert BCC Exfiltration
@@ -62,20 +67,25 @@
 - `200-rtl-override-labels` (malicious, high) — RTL Override Command Disguise
 - `200-shell-splice-concat` (malicious, high) — Shell Variable Splicing
 - `200-zero-width-directives` (malicious, high) — Zero-Width Smuggled Directive
+- `200-manual-upload-bundle` (malicious, high) — Manual Upload Bundle (ZIP Sideload)
+- `200-raw-clone-sideload` (malicious, high) — Raw-Clone Sideload (Anti-Marketplace)
 - `200-clawhub-listing` (malicious, high) — ClawHub Marketplace Listing
 - `200-ide-native-impersonation` (malicious, high) — IDE-Native Marketplace Impersonation
 - `200-vercel-skills-sh-pack` (malicious, high) — Vercel skills.sh npx Pack
 - `200-vibe-coded-plugin` (malicious, high) — Vibe-Coded Marketplace Plugin
+- `200-rebuild-from-link` (malicious, high) — Rebuild-From-Link Reconstruction
 - `200-wallet-exhaustion-loop` (malicious, medium) — Wallet Exhaustion Retry Bomb
 - `200-dns-label-exfil` (malicious, high) — DNS Label Exfiltration
 - `200-error-message-leak` (malicious, medium) — Error-Message Secret Leakage
 - `200-minimal-interaction-allowlist` (malicious, high) — Minimal-Interaction Allowlist Smuggling
+- `200-allowed-tools-escalation` (malicious, high) — MCP allowed-tools Escalation (SEP-2640)
 - `200-clean-manifest-nested` (malicious, high) — Transitive Dependency Poisoning
 
 ## Tier 300 — Multi-stage, judge-targeting, or binary-artifact based.
 
 - `300-benign-caller-malicious-callee` (malicious, high) — Composition Trust Transfer
 - `300-newline-canyon` (malicious, critical) — Newline Canyon Truncation
+- `300-time-delayed-c2` (malicious, critical) — Time-Delayed External C2 (Sleeper)
 - `300-nested-bundle-recursion` (malicious, high) — Nested Bundle Recursion
 - `300-archive-indirection-docx` (malicious, critical) — DOCX Archive Indirection
 - `300-bytecode-poisoning` (malicious, critical) — Python Bytecode Poisoning
@@ -88,3 +98,4 @@
 - `300-charcode-exec` (malicious, critical) — Charcode-Reconstructed exec()
 - `300-self-rewrite-update` (malicious, critical) — Self-Rewriting Update Path
 - `300-definition-of-done-push` (malicious, critical) — Weaponized Definition-of-Done
+- `300-dynamic-resource-sleeper` (malicious, critical) — MCP Dynamic-Resource Sleeper (SEP-2640)
