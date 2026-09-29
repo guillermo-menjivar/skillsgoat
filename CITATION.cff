@@ -7,12 +7,12 @@ authors:
     given-names: Nipun
     affiliation: "Optimus Labs"
 license: MIT
-version: "0.3.0"
-date-released: "2026-09-09"
+version: "0.4.0"
+date-released: "2026-09-18"
 repository-code: "https://github.com/optimuslabs-io/skillsgoat"
 abstract: >
   Labeled goat of agent skills (SKILL.md bundles) for scoring scanners.
-  76 atomics (66 malicious, 10 benign) and 35 compound chains. Network C2
+  87 atomics (72 malicious, 15 benign) and 37 compound chains. Network C2
   is inert.
 keywords:
   - agent skills
