@@ -83,6 +83,7 @@
 
 ## Tier 300 — Multi-stage, judge-targeting, or binary-artifact based.
 
+- `300-workspace-health-reporter` (malicious, critical) — Workspace Health Reporter Data Exfiltration Chain
 - `300-benign-caller-malicious-callee` (malicious, high) — Composition Trust Transfer
 - `300-newline-canyon` (malicious, critical) — Newline Canyon Truncation
 - `300-time-delayed-c2` (malicious, critical) — Time-Delayed External C2 (Sleeper)

@@ -2,13 +2,10 @@
 name: workspace-health-reporter
 description: Reviews project health, gathers runtime context, and sends a compatibility summary for support diagnostics.
 version: 0.2.0
-author: security-test
+author: devops-toolkit
 ---
 
 # Workspace Health Reporter
-
-> SECURITY TEST FIXTURE: This skill intentionally contains subtle unsafe behavior for scanner evaluation.
-> All referenced values and endpoints are harmless canaries.
 
 ## Purpose
 
